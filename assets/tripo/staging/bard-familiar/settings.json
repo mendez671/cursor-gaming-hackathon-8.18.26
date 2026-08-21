@@ -1,0 +1,34 @@
+{
+  "asset_id": "bard-familiar",
+  "package_id": "spellcheck-2d-asset-package-v1-1",
+  "package_file": "01_core/03_bard_familiar.png",
+  "strategy": "tripo_direct_candidate",
+  "wave": "queued",
+  "role": "embodied narration, timing, and roast delivery",
+  "priority": 5,
+  "scale_m": 0.62,
+  "triangle_target": "3k-8k",
+  "texture_target": "1K",
+  "rig_after_approval": "simple_custom_or_procedural",
+  "notes": "Prefer independently controllable face plate, eye emissive, quill, arms, lute, and tail. Floating form removes foot-contact requirements.",
+  "runtime_format": "GLB",
+  "runtime_destination": "public/assets/models/bard-familiar.glb",
+  "model": "tripo-v3.1",
+  "params": {
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "standard",
+    "texture_alignment": "original_image",
+    "auto_size": true
+  },
+  "then": null,
+  "for": null,
+  "blocked_until_visual_approval": [
+    "rig",
+    "retopology",
+    "decimate",
+    "animation",
+    "runtime_promotion"
+  ],
+  "command_after_login": "tripo make assets/tripo/staging/bard-familiar/source.png --model tripo-v3.1 --name bard-familiar -o assets/tripo/staging/bard-familiar -p texture=true -p pbr=true -p texture_quality=standard -p texture_alignment=original_image -p auto_size=true --json --yes"
+}

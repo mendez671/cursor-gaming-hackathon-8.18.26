@@ -1,0 +1,38 @@
+{
+  "asset_id": "route-bridge",
+  "package_id": "spellcheck-2d-asset-package-v1-1",
+  "package_file": "03_world/04_route_bridge_module.png",
+  "strategy": "tripo_shell_then_rebuild",
+  "wave": "queued",
+  "role": "gap crossing and environmental obstacle frame",
+  "priority": 11,
+  "scale_m": [
+    7.0,
+    2.2,
+    8.0
+  ],
+  "triangle_target": "3k-7k",
+  "texture_target": "1K",
+  "rig_after_approval": "none",
+  "notes": "Guarantee Scriptorium clearance, route snap points, and a simplified deck collider after generation.",
+  "runtime_format": "GLB",
+  "runtime_destination": "public/assets/models/route-bridge.glb",
+  "model": "tripo-v3.1",
+  "params": {
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "standard",
+    "texture_alignment": "original_image",
+    "auto_size": true
+  },
+  "then": null,
+  "for": null,
+  "blocked_until_visual_approval": [
+    "rig",
+    "retopology",
+    "decimate",
+    "animation",
+    "runtime_promotion"
+  ],
+  "command_after_login": "tripo make assets/tripo/staging/route-bridge/source.png --model tripo-v3.1 --name route-bridge -o assets/tripo/staging/route-bridge -p texture=true -p pbr=true -p texture_quality=standard -p texture_alignment=original_image -p auto_size=true --json --yes"
+}

@@ -1,0 +1,30 @@
+# SPELLCHECK Tripo three-asset pilot
+# DO NOT RUN until tripo login, tripo doctor, and explicit paid-generation approval.
+# Resume: re-run this file. Succeeded jobs are skipped. --fresh re-spends credits.
+# No `for` / `then`: first pass is raw v3.1 image-to-3D GLB. Visual approval before rig/retopo/anim.
+
+concurrency: 1
+defaults:
+  model: tripo-v3.1
+  params:
+    texture: true
+    pbr: true
+    texture_quality: standard
+    texture_alignment: original_image
+    auto_size: true
+jobs:
+  - name: cooldown-golem
+    input: assets/tripo/staging/cooldown-golem/source.png
+    out: assets/tripo/staging/cooldown-golem
+  - name: misfire-goose
+    input: assets/tripo/staging/misfire-goose/source.png
+    out: assets/tripo/staging/misfire-goose
+  - name: traveling-scriptorium
+    input: assets/tripo/staging/traveling-scriptorium/source.png
+    out: assets/tripo/staging/traveling-scriptorium
+    params:
+      texture: true
+      pbr: true
+      texture_quality: detailed
+      texture_alignment: original_image
+      auto_size: true

@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "provider": "elevenlabs",
+  "api": "POST /v1/text-to-speech/{voice_id}",
+  "model": "eleven_multilingual_v2",
+  "generatedAt": "2026-08-19T03:04:26.692Z",
+  "script": "At last, our champion. The kingdom has chosen optimism. You requested wind. The universe heard goose. Here fell our hero: brave, bold, and one vowel short.",
+  "provisionalVoice": {
+    "id": "nPczCjzI2devNBz1zQrb",
+    "name": "Brian - Deep, Resonant and Comforting",
+    "category": "premade",
+    "labels": {
+      "use_case": "social_media",
+      "accent": "american",
+      "language": "en",
+      "age": "middle_aged",
+      "gender": "male",
+      "descriptive": "classy"
+    },
+    "description": "Middle-aged man with a resonant and comforting tone. Great for narrations and advertisements.",
+    "metadataScore": 40
+  },
+  "humanSelectionRequired": true,
+  "clips": [
+    {
+      "voice": {
+        "id": "nPczCjzI2devNBz1zQrb",
+        "name": "Brian - Deep, Resonant and Comforting",
+        "category": "premade",
+        "labels": {
+          "use_case": "social_media",
+          "accent": "american",
+          "language": "en",
+          "age": "middle_aged",
+          "gender": "male",
+          "descriptive": "classy"
+        },
+        "description": "Middle-aged man with a resonant and comforting tone. Great for narrations and advertisements.",
+        "metadataScore": 40
+      },
+      "file": "/audio/bard/auditions/brian-deep-resonant-and-comforting-nPczCj/composite.mp3",
+      "durationSeconds": 11.238,
+      "sizeBytes": 181020
+    },
+    {
+      "voice": {
+        "id": "pFZP5JQG7iQjIQuC4Bku",
+        "name": "Lily - Velvety Actress",
+        "category": "premade",
+        "labels": {
+          "use_case": "informative_educational",
+          "accent": "british",
+          "language": "en",
+          "age": "middle_aged",
+          "gender": "female",
+          "descriptive": "confident"
+        },
+        "description": "Velvety British female voice delivers news and narrations with warmth and clarity.",
+        "metadataScore": 39
+      },
+      "file": "/audio/bard/auditions/lily-velvety-actress-pFZP5J/composite.mp3",
+      "durationSeconds": 13.793,
+      "sizeBytes": 221562
+    },
+    {
+      "voice": {
+        "id": "JBFqnCBsd6RMkjVDRZzb",
+        "name": "George - Warm, Captivating Storyteller",
+        "category": "premade",
+        "labels": {
+          "use_case": "narrative_story",
+          "accent": "british",
+          "language": "en",
+          "age": "middle_aged",
+          "gender": "male",
+          "descriptive": "mature"
+        },
+        "description": "Warm resonance that instantly captivates listeners.",
+        "metadataScore": 29
+      },
+      "file": "/audio/bard/auditions/george-warm-captivating-storyteller-JBFqnC/composite.mp3",
+      "durationSeconds": 11.099,
+      "sizeBytes": 178512
+    }
+  ]
+}

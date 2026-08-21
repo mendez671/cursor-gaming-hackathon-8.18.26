@@ -1,0 +1,136 @@
+{
+  "spec_id": "spellcheck-open-zone-context-contract-v1",
+  "revision": "1.1.0",
+  "canonical_change": {
+    "decision_id": "D-001",
+    "previous": "Typing is the only player-facing control language.",
+    "current": "Typing remains the primary combat and magic action, while movement supports exploration in a mutually exclusive input context.",
+    "preserved": [
+      "keyboard-only completion remains supported",
+      "no click-to-cast",
+      "no manual combat stance button",
+      "prompt lock after the first committed character",
+      "deterministic spell resolution",
+      "combat-aware automatic recommendations",
+      "bard commentary remains state-aware and pre-baked"
+    ]
+  },
+  "state_machine": {
+    "initial": "exploration",
+    "states": {
+      "exploration": {
+        "input_owner": "movement",
+        "controls": ["WASD", "arrow keys", "Enter", "Space", "Escape"],
+        "printable_text_capture": false,
+        "movement_enabled": true
+      },
+      "transition_to_casting": {
+        "input_owner": "system",
+        "max_duration_ms": 400,
+        "sequence": [
+          "stop movement without snapping",
+          "settle camera",
+          "place player and threat in readable frame",
+          "deploy field lectern and grimoire",
+          "form casting-context ring",
+          "activate prompt and printable-key capture"
+        ],
+        "movement_enabled": false,
+        "printable_text_capture": false
+      },
+      "casting": {
+        "input_owner": "typing",
+        "controls": ["letters", "Space", "Backspace", "Enter", "Escape"],
+        "movement_enabled": false,
+        "printable_text_capture": true,
+        "prompt_lock": "first committed character"
+      },
+      "resolution": {
+        "input_owner": "system",
+        "movement_enabled": false,
+        "printable_text_capture": false,
+        "required_outputs": ["spell or misfire consequence", "enemy/world reaction", "bard response opportunity"]
+      },
+      "return_to_exploration": {
+        "input_owner": "system",
+        "max_duration_ms": 500,
+        "sequence": [
+          "release printable-key capture",
+          "retract prompt",
+          "fold field lectern and grimoire",
+          "restore follow camera",
+          "enable movement"
+        ],
+        "movement_enabled": false,
+        "printable_text_capture": false
+      }
+    },
+    "legal_transitions": [
+      ["exploration", "transition_to_casting"],
+      ["transition_to_casting", "casting"],
+      ["casting", "resolution"],
+      ["resolution", "casting"],
+      ["resolution", "return_to_exploration"],
+      ["return_to_exploration", "exploration"]
+    ]
+  },
+  "first_prototype": {
+    "zone_name": "Gilded Margin",
+    "structure": "one dense open zone, not a seamless global map",
+    "required_assets": [
+      "typomancer",
+      "bard-familiar",
+      "traveling-scriptorium",
+      "scriptorium-waymark-dock",
+      "field-casting-lectern",
+      "margin-archivist-npc",
+      "wordlock-shrine",
+      "open-zone-ground-module",
+      "terrace-ramp-module",
+      "route-straight",
+      "route-bend-45-left",
+      "inkblot-imp",
+      "casting-context-ring-vfx"
+    ],
+    "required_beats": [
+      "begin beside the docked Scriptorium",
+      "walk under a stable follow camera",
+      "meet and interact with one NPC",
+      "discover one optional side path",
+      "complete one environmental Wordlock interaction",
+      "see an enemy in world space before combat begins",
+      "transition automatically into casting",
+      "resolve one recommended spell",
+      "return automatically to exploration"
+    ],
+    "excluded": [
+      "sprinting",
+      "jumping",
+      "dodging",
+      "stamina",
+      "melee combat",
+      "manual target selection",
+      "manual combat stance",
+      "required mouse camera",
+      "multiple regions before this loop is proven"
+    ]
+  },
+  "world_model": {
+    "format": "open zones connected by Scriptorium travel",
+    "zone_examples": ["valley", "forest", "fen", "canyon", "archive district"],
+    "scriptorium_functions": ["save hub", "spellbook station", "settings location", "regional transport"],
+    "loading_mask": "illustrated travel sequence",
+    "persistence": "previously repaired regions remain available"
+  },
+  "acceptance_tests": [
+    "Pressing W during exploration moves forward and never enters the typing buffer.",
+    "Pressing W during casting enters the typing buffer and never moves the player.",
+    "An encounter cannot enter casting until player velocity is zero and the camera is settled.",
+    "Exploration cannot resume until printable-key capture has been released.",
+    "The player never presses a separate combat-mode button.",
+    "The enemy is visible before the prompt appears.",
+    "The prompt remains stable after the first committed character.",
+    "The same context-safe typing contract works for a Wordlock Shrine without an enemy.",
+    "Keyboard-only play can complete exploration interaction, casting, menus, and pause flows."
+  ]
+}

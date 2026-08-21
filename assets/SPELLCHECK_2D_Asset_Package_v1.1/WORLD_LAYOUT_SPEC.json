@@ -1,0 +1,107 @@
+{
+  "world_id": "lexicon-frontier-vertical-slice-v1",
+  "layout_reference": "05_direction/02_top_down_vertical_slice_layout.png",
+  "interpretation_note": "The image is directional. Runtime transforms must be authored or generated into validated numeric values and clamped before use.",
+  "semantic_colors": {
+    "pale_sandstone": "traversable route",
+    "moss_teal": "decorative verge and low-priority dressing",
+    "black_violet": "ink water or corruption",
+    "muted_amber_circle": "encounter or obstacle clearing",
+    "cyan_outline": "world-reaction or landmark anchor",
+    "indigo_edge_haze": "non-playable boundary"
+  },
+  "route": {
+    "shape": "bottom-left departure to top-right Archive destination",
+    "target_length_m": 140,
+    "target_width_m": 6,
+    "camera_safe_width_m": 18,
+    "player_walk_speed_mps": 3.2,
+    "scriptorium_mode": "stationary_waymark_hub_and_inter_region_transport",
+    "segments": [
+      "departure-platform",
+      "opening-straight",
+      "encounter-clearing-a",
+      "river-bend",
+      "central-clearing",
+      "bridge",
+      "archive-approach"
+    ]
+  },
+  "anchors": {
+    "departure": {
+      "required_assets": ["scriptorium-waymark-dock", "traveling-scriptorium"],
+      "route_t": 0.0
+    },
+    "archive": {
+      "required_asset": "ruined-archive-gateway",
+      "route_t": 1.0
+    },
+    "prompt": {
+      "required_asset": "world-space-prompt-anchor",
+      "parent": "field-casting-lectern_or_encounter_anchor",
+      "keep_clear_radius_m": 7
+    },
+    "bard": {
+      "required_asset": "bard-familiar",
+      "parent": "player_follow_rig_during_exploration"
+    }
+  },
+  "encounters": [
+    {
+      "id": "ink-imp-introduction",
+      "route_t": 0.2,
+      "enemy_ids": ["inkblot-imp"],
+      "lane_count": 1,
+      "recommended_spell_pool": ["ignis ventus", "glacies terra"]
+    },
+    {
+      "id": "cooldown-adaptation",
+      "route_t": 0.53,
+      "enemy_ids": ["cooldown-golem"],
+      "lane_count": 2,
+      "recommended_spell_pool": ["glacies terra", "ignis ventus"],
+      "must_demonstrate": "recommendation changes when a root is unavailable"
+    },
+    {
+      "id": "misfire-showcase",
+      "route_t": 0.73,
+      "enemy_ids": ["misfire-goose"],
+      "lane_count": 0,
+      "must_demonstrate": "physical comedy consequence followed by bard reaction"
+    }
+  ],
+  "reaction_zones": [
+    {
+      "id": "ink-river-a",
+      "asset_id": "ink-river-segment",
+      "accepts": ["fire", "ice", "wind", "earth"],
+      "featured_result": "ice-crystal-ridge",
+      "memory_duration_s": 20
+    },
+    {
+      "id": "route-memory-a",
+      "asset_id": "route-straight",
+      "accepts": ["fire", "earth"],
+      "possible_results": ["fire-scorched-route-patch", "earth-raised-barrier"],
+      "memory_duration_s": 16
+    }
+  ],
+  "repetition_policy": {
+    "route_straight_instances": "as_needed",
+    "route_bend_instances": "2-4",
+    "route_edge_instances": "instanced",
+    "rune_monolith_instances": 4,
+    "ink_river_instances": "2-5",
+    "archive_gateway_instances": 1,
+    "scriptorium_instances": 1
+  },
+  "locked_legibility_rules": [
+    "Threats exist in world space before a label appears.",
+    "The active phrase remains stable after the first committed character.",
+    "No world dressing crosses the prompt keep-clear radius.",
+    "Camera movement yields to typing readability.",
+    "Exploration movement is disabled before casting captures printable keys.",
+    "Typing capture releases before exploration movement is restored.",
+    "World size may be cut before world reactivity or prompt clarity."
+  ]
+}

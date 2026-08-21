@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src",
+    "docs/ready/data/spells.json",
+    "docs/ready/data/encounter.json",
+        "docs/ready/data/bard-lines.json",
+        "docs/ready/data/roots.json",
+        "docs/ready/data/audio-manifest.json",
+        "assets/SPELLCHECK_2D_Asset_Package_v1.1/WORLD_LAYOUT_SPEC.json"
+  ]
+}

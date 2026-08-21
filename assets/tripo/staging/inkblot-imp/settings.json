@@ -1,0 +1,34 @@
+{
+  "asset_id": "inkblot-imp",
+  "package_id": "spellcheck-2d-asset-package-v1-1",
+  "package_file": "02_enemies/01_inkblot_imp.png",
+  "strategy": "tripo_direct_candidate",
+  "wave": "queued",
+  "role": "fast basic threat",
+  "priority": 6,
+  "scale_m": 0.75,
+  "triangle_target": "2k-5k",
+  "texture_target": "1K",
+  "rig_after_approval": "simple_custom",
+  "notes": "Use a coherent base mesh. Add live ink wobble, droplets, anticipation, and pop defeat procedurally rather than baking them into topology.",
+  "runtime_format": "GLB",
+  "runtime_destination": "public/assets/models/inkblot-imp.glb",
+  "model": "tripo-v3.1",
+  "params": {
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "standard",
+    "texture_alignment": "original_image",
+    "auto_size": true
+  },
+  "then": null,
+  "for": null,
+  "blocked_until_visual_approval": [
+    "rig",
+    "retopology",
+    "decimate",
+    "animation",
+    "runtime_promotion"
+  ],
+  "command_after_login": "tripo make assets/tripo/staging/inkblot-imp/source.png --model tripo-v3.1 --name inkblot-imp -o assets/tripo/staging/inkblot-imp -p texture=true -p pbr=true -p texture_quality=standard -p texture_alignment=original_image -p auto_size=true --json --yes"
+}

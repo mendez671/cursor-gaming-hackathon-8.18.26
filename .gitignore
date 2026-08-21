@@ -1,0 +1,14 @@
+node_modules
+dist
+.DS_Store
+.env
+*.local
+test-results
+playwright-report
+blob-report
+.playwright-mcp
+
+# Tripo: generated downloads and resume state. Never commit API keys.
+assets/tripo/staging/**/tripo-out/
+assets/tripo/batch/*.state.json
+public/assets/models/*.glb

@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "provider": "elevenlabs",
+  "api": "POST /v1/text-to-speech/{voice_id}",
+  "sourceManifest": "docs/ready/data/audio-manifest.json",
+  "selectedVoice": {
+    "id": "nPczCjzI2devNBz1zQrb",
+    "name": "Brian - Deep, Resonant and Comforting",
+    "category": "premade",
+    "labels": {
+      "use_case": "social_media",
+      "accent": "american",
+      "language": "en",
+      "age": "middle_aged",
+      "gender": "male",
+      "descriptive": "classy"
+    },
+    "description": "Middle-aged man with a resonant and comforting tone. Great for narrations and advertisements.",
+    "metadataScore": 40
+  },
+  "model": "eleven_multilingual_v2",
+  "generatedAt": "2026-08-19T03:04:52.385Z",
+  "format": {
+    "codec": "mp3",
+    "mimeType": "audio/mpeg",
+    "outputFormat": "mp3_44100_128",
+    "sampleRateHz": 44100,
+    "bitRateBps": 128000
+  },
+  "clips": [
+    {
+      "lineId": "open_01",
+      "file": "/audio/bard/open_01.mp3",
+      "subtitle": "At last, our champion. The kingdom has chosen optimism.",
+      "requiredForDemo": true,
+      "status": "generated",
+      "durationSeconds": 3.483,
+      "sizeBytes": 56886
+    },
+    {
+      "lineId": "success_01",
+      "file": "/audio/bard/success_01.mp3",
+      "subtitle": "A proper spell. I may yet keep my contract.",
+      "requiredForDemo": false,
+      "status": "generated",
+      "durationSeconds": 2.926,
+      "sizeBytes": 47691
+    },
+    {
+      "lineId": "typo_first_01",
+      "file": "/audio/bard/typo_first_01.mp3",
+      "subtitle": "The spell was ancient. Your spelling was experimental.",
+      "requiredForDemo": false,
+      "status": "generated",
+      "durationSeconds": 3.158,
+      "sizeBytes": 51453
+    },
+    {
+      "lineId": "typo_repeat_01",
+      "file": "/audio/bard/typo_repeat_01.mp3",
+      "subtitle": "Again? At this point, it may be tradition.",
+      "requiredForDemo": false,
+      "status": "generated",
+      "durationSeconds": 2.322,
+      "sizeBytes": 38078
+    },
+    {
+      "lineId": "goose_01",
+      "file": "/audio/bard/goose_01.mp3",
+      "subtitle": "You requested wind. The universe heard goose.",
+      "requiredForDemo": true,
+      "status": "generated",
+      "durationSeconds": 2.833,
+      "sizeBytes": 46437
+    },
+    {
+      "lineId": "panic_01",
+      "file": "/audio/bard/panic_01.mp3",
+      "subtitle": "Half a spell. All of the consequences.",
+      "requiredForDemo": false,
+      "status": "generated",
+      "durationSeconds": 2.554,
+      "sizeBytes": 41839
+    },
+    {
+      "lineId": "recover_01",
+      "file": "/audio/bard/recover_01.mp3",
+      "subtitle": "Competence has arrived. Fashionably late, but welcome.",
+      "requiredForDemo": true,
+      "status": "generated",
+      "durationSeconds": 3.39,
+      "sizeBytes": 55214
+    },
+    {
+      "lineId": "win_01",
+      "file": "/audio/bard/win_01.mp3",
+      "subtitle": "You have prevailed. I shall revise my earlier notes.",
+      "requiredForDemo": true,
+      "status": "generated",
+      "durationSeconds": 3.111,
+      "sizeBytes": 51035
+    },
+    {
+      "lineId": "lose_01",
+      "file": "/audio/bard/lose_01.mp3",
+      "subtitle": "Here fell our hero: brave, bold, and one vowel short.",
+      "requiredForDemo": true,
+      "status": "generated",
+      "durationSeconds": 3.483,
+      "sizeBytes": 56886
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "asset_id": "traveling-scriptorium",
+  "package_id": "spellcheck-2d-asset-package-v1-1",
+  "package_file": "01_core/04_traveling_scriptorium.png",
+  "strategy": "tripo_shell_then_rebuild",
+  "wave": "pilot",
+  "role": "regional save hub, spellbook station, settings location, and transport between unlocked open zones",
+  "priority": 3,
+  "scale_m": 4.8,
+  "triangle_target": "10k-20k",
+  "texture_target": "2K",
+  "rig_after_approval": "separate_leg_and_recoil_parts",
+  "notes": "Treat the generated body as a shell. Dock it at waymarks; define explicit legs, docking transforms, interaction point, bard perch, cooldown mounts, and collider. Do not make the player steer it through the zone.",
+  "runtime_format": "GLB",
+  "runtime_destination": "public/assets/models/traveling-scriptorium.glb",
+  "model": "tripo-v3.1",
+  "params": {
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "detailed",
+    "texture_alignment": "original_image",
+    "auto_size": true
+  },
+  "then": null,
+  "for": null,
+  "blocked_until_visual_approval": [
+    "rig",
+    "retopology",
+    "decimate",
+    "animation",
+    "runtime_promotion"
+  ],
+  "command_after_login": "tripo make assets/tripo/staging/traveling-scriptorium/source.png --model tripo-v3.1 --name traveling-scriptorium -o assets/tripo/staging/traveling-scriptorium -p texture=true -p pbr=true -p texture_quality=detailed -p texture_alignment=original_image -p auto_size=true --json --yes"
+}

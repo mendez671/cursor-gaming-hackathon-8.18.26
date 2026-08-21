@@ -1,0 +1,136 @@
+{
+  "package": "assets/SPELLCHECK_2D_Asset_Package_v1.1",
+  "submitted": false,
+  "pilot_submitted": true,
+  "pilot_credits_consumed": 100,
+  "runtime_format": "GLB",
+  "runtime_destination": "public/assets/models",
+  "visual_approval_required": true,
+  "pilot": [
+    "cooldown-golem",
+    "misfire-goose",
+    "traveling-scriptorium"
+  ],
+  "jobs": [
+    {
+      "id": "cooldown-golem",
+      "strategy": "tripo_direct_candidate",
+      "wave": "pilot",
+      "staging": "assets/tripo/staging/cooldown-golem"
+    },
+    {
+      "id": "misfire-goose",
+      "strategy": "tripo_direct_candidate",
+      "wave": "pilot",
+      "staging": "assets/tripo/staging/misfire-goose"
+    },
+    {
+      "id": "traveling-scriptorium",
+      "strategy": "tripo_shell_then_rebuild",
+      "wave": "pilot",
+      "staging": "assets/tripo/staging/traveling-scriptorium"
+    },
+    {
+      "id": "typomancer",
+      "strategy": "tripo_direct_candidate",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/typomancer"
+    },
+    {
+      "id": "bard-familiar",
+      "strategy": "tripo_direct_candidate",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/bard-familiar"
+    },
+    {
+      "id": "inkblot-imp",
+      "strategy": "tripo_direct_candidate",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/inkblot-imp"
+    },
+    {
+      "id": "ruined-archive-gateway",
+      "strategy": "tripo_shell_then_rebuild",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/ruined-archive-gateway"
+    },
+    {
+      "id": "ice-crystal-ridge",
+      "strategy": "tripo_direct_candidate",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/ice-crystal-ridge"
+    },
+    {
+      "id": "earth-raised-barrier",
+      "strategy": "tripo_direct_candidate",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/earth-raised-barrier"
+    },
+    {
+      "id": "field-casting-lectern",
+      "strategy": "tripo_direct_candidate",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/field-casting-lectern"
+    },
+    {
+      "id": "margin-archivist-npc",
+      "strategy": "tripo_direct_candidate",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/margin-archivist-npc"
+    },
+    {
+      "id": "wordlock-shrine",
+      "strategy": "tripo_shell_then_rebuild",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/wordlock-shrine"
+    },
+    {
+      "id": "scriptorium-waymark-dock",
+      "strategy": "tripo_shell_then_rebuild",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/scriptorium-waymark-dock"
+    },
+    {
+      "id": "rune-grimoire-keyboard",
+      "strategy": "tripo_direct_candidate",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/rune-grimoire-keyboard"
+    },
+    {
+      "id": "rune-monolith",
+      "strategy": "tripo_direct_candidate",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/rune-monolith"
+    },
+    {
+      "id": "world-space-prompt-anchor",
+      "strategy": "tripo_shell_then_rebuild",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/world-space-prompt-anchor"
+    },
+    {
+      "id": "route-bridge",
+      "strategy": "tripo_shell_then_rebuild",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/route-bridge"
+    },
+    {
+      "id": "redaction-hound",
+      "strategy": "tripo_direct_candidate",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/redaction-hound"
+    },
+    {
+      "id": "homophone-harpy",
+      "strategy": "tripo_direct_candidate",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/homophone-harpy"
+    },
+    {
+      "id": "syntax-wyrm",
+      "strategy": "tripo_shell_then_rebuild",
+      "wave": "queued",
+      "staging": "assets/tripo/staging/syntax-wyrm"
+    }
+  ]
+}

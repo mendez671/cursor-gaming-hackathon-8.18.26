@@ -1,0 +1,34 @@
+{
+  "asset_id": "field-casting-lectern",
+  "package_id": "spellcheck-2d-asset-package-v1-1",
+  "package_file": "06_exploration/03_field_casting_lectern.png",
+  "strategy": "tripo_direct_candidate",
+  "wave": "queued",
+  "role": "physical bridge between exploration and casting contexts",
+  "priority": 4,
+  "scale_m": 1.15,
+  "triangle_target": "2k-5k",
+  "texture_target": "1K",
+  "rig_after_approval": "procedural_fold_deploy_and_retract",
+  "notes": "Mount the existing separate grimoire in the blank cradle at runtime. The lectern must finish deploying before printable keys are captured.",
+  "runtime_format": "GLB",
+  "runtime_destination": "public/assets/models/field-casting-lectern.glb",
+  "model": "tripo-v3.1",
+  "params": {
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "standard",
+    "texture_alignment": "original_image",
+    "auto_size": true
+  },
+  "then": null,
+  "for": null,
+  "blocked_until_visual_approval": [
+    "rig",
+    "retopology",
+    "decimate",
+    "animation",
+    "runtime_promotion"
+  ],
+  "command_after_login": "tripo make assets/tripo/staging/field-casting-lectern/source.png --model tripo-v3.1 --name field-casting-lectern -o assets/tripo/staging/field-casting-lectern -p texture=true -p pbr=true -p texture_quality=standard -p texture_alignment=original_image -p auto_size=true --json --yes"
+}

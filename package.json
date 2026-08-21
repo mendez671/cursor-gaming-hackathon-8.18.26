@@ -1,0 +1,31 @@
+{
+  "name": "spellcheck",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preflight": "npm run build && npm test",
+    "preview": "vite preview",
+    "audio:bard": "node scripts/audio/generate-xai-bard.mjs",
+    "audio:bard:elevenlabs": "node scripts/audio/generate-elevenlabs-bard.mjs",
+    "test": "node --import ./test/register.mjs --test test/game.test.mjs test/audio.test.mjs test/audio-pack.test.mjs test/world.test.mjs",
+    "test:ux": "playwright test"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^9.7.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@types/three": "^0.185.4",
+    "@vitejs/plugin-react": "^5.0.2",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.5"
+  }
+}

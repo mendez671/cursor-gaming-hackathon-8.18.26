@@ -1,0 +1,34 @@
+{
+  "asset_id": "homophone-harpy",
+  "package_id": "spellcheck-2d-asset-package-v1-1",
+  "package_file": "02_enemies/05_homophone_harpy.png",
+  "strategy": "tripo_direct_candidate",
+  "wave": "queued",
+  "role": "paired or deceptive phrase threat",
+  "priority": 13,
+  "scale_m": 2.4,
+  "triangle_target": "4k-9k",
+  "texture_target": "1K",
+  "rig_after_approval": "avian_custom",
+  "notes": "Two heads must remain separated. Reduce wing spread for production rigging if reconstruction fuses feathers or occludes the torso.",
+  "runtime_format": "GLB",
+  "runtime_destination": "public/assets/models/homophone-harpy.glb",
+  "model": "tripo-v3.1",
+  "params": {
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "standard",
+    "texture_alignment": "original_image",
+    "auto_size": true
+  },
+  "then": null,
+  "for": null,
+  "blocked_until_visual_approval": [
+    "rig",
+    "retopology",
+    "decimate",
+    "animation",
+    "runtime_promotion"
+  ],
+  "command_after_login": "tripo make assets/tripo/staging/homophone-harpy/source.png --model tripo-v3.1 --name homophone-harpy -o assets/tripo/staging/homophone-harpy -p texture=true -p pbr=true -p texture_quality=standard -p texture_alignment=original_image -p auto_size=true --json --yes"
+}

@@ -1,0 +1,80 @@
+{
+  "version": "v0",
+  "pairRule": "unordered",
+  "matchRule": "Normalize active input to lowercase NFC and accept only [a-z ]. Exact displayed incantation auto-casts; dirty Enter checks the cursed table, then fizzles. Unordered roots define corpus identity only; reversed input is not a second active matcher.",
+  "displayRule": "Use the authored spell.incantation. Do not alphabetize at runtime.",
+  "roots": [
+    {
+      "id": "aqua",
+      "display": "aqua",
+      "pronunciation": "AH-kwah",
+      "meaning": "water; quenches fire"
+    },
+    {
+      "id": "fractura",
+      "display": "fractura",
+      "pronunciation": "frak-TOO-rah",
+      "meaning": "break; armor-shatter"
+    },
+    {
+      "id": "fulgur",
+      "display": "fulgur",
+      "pronunciation": "FUL-gur",
+      "meaning": "lightning; interrupt"
+    },
+    {
+      "id": "glacies",
+      "display": "glacies",
+      "pronunciation": "GLAH-see-es",
+      "meaning": "ice; holds and cracks"
+    },
+    {
+      "id": "ignis",
+      "display": "ignis",
+      "pronunciation": "IG-nis",
+      "meaning": "fire"
+    },
+    {
+      "id": "lumen",
+      "display": "lumen",
+      "pronunciation": "LOO-men",
+      "meaning": "light; reveals swarms"
+    },
+    {
+      "id": "mors",
+      "display": "mors",
+      "pronunciation": "mors",
+      "meaning": "ending; lethal"
+    },
+    {
+      "id": "ordo",
+      "display": "ordo",
+      "pronunciation": "OR-doh",
+      "meaning": "order; seal and measure"
+    },
+    {
+      "id": "terra",
+      "display": "terra",
+      "pronunciation": "TER-rah",
+      "meaning": "earth; hold the line"
+    },
+    {
+      "id": "umbra",
+      "display": "umbra",
+      "pronunciation": "UM-brah",
+      "meaning": "shadow"
+    },
+    {
+      "id": "ventus",
+      "display": "ventus",
+      "pronunciation": "VEN-tus",
+      "meaning": "wind; interrupt and scatter"
+    },
+    {
+      "id": "vita",
+      "display": "vita",
+      "pronunciation": "VEE-tah",
+      "meaning": "life; ward"
+    }
+  ]
+}

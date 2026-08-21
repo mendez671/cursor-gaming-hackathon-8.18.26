@@ -1,0 +1,99 @@
+# SPELLCHECK Tripo queue — tripo_direct_candidate + tripo_shell_then_rebuild
+# DO NOT RUN until tripo login, tripo doctor, and explicit paid-generation approval.
+# Resume: re-run this file. Succeeded jobs are skipped. --fresh re-spends credits.
+# No `for` / `then`: first pass is raw v3.1 image-to-3D GLB. Visual approval before rig/retopo/anim.
+
+concurrency: 1
+defaults:
+  model: tripo-v3.1
+  params:
+    texture: true
+    pbr: true
+    texture_quality: standard
+    texture_alignment: original_image
+    auto_size: true
+jobs:
+  - name: cooldown-golem
+    input: assets/tripo/staging/cooldown-golem/source.png
+    out: assets/tripo/staging/cooldown-golem
+  - name: misfire-goose
+    input: assets/tripo/staging/misfire-goose/source.png
+    out: assets/tripo/staging/misfire-goose
+  - name: traveling-scriptorium
+    input: assets/tripo/staging/traveling-scriptorium/source.png
+    out: assets/tripo/staging/traveling-scriptorium
+    params:
+      texture: true
+      pbr: true
+      texture_quality: detailed
+      texture_alignment: original_image
+      auto_size: true
+  - name: typomancer
+    input: assets/tripo/staging/typomancer/source.png
+    out: assets/tripo/staging/typomancer
+    params:
+      texture: true
+      pbr: true
+      texture_quality: detailed
+      texture_alignment: original_image
+      auto_size: true
+  - name: bard-familiar
+    input: assets/tripo/staging/bard-familiar/source.png
+    out: assets/tripo/staging/bard-familiar
+  - name: inkblot-imp
+    input: assets/tripo/staging/inkblot-imp/source.png
+    out: assets/tripo/staging/inkblot-imp
+  - name: ruined-archive-gateway
+    input: assets/tripo/staging/ruined-archive-gateway/source.png
+    out: assets/tripo/staging/ruined-archive-gateway
+    params:
+      texture: true
+      pbr: true
+      texture_quality: detailed
+      texture_alignment: original_image
+      auto_size: true
+  - name: ice-crystal-ridge
+    input: assets/tripo/staging/ice-crystal-ridge/source.png
+    out: assets/tripo/staging/ice-crystal-ridge
+  - name: earth-raised-barrier
+    input: assets/tripo/staging/earth-raised-barrier/source.png
+    out: assets/tripo/staging/earth-raised-barrier
+  - name: field-casting-lectern
+    input: assets/tripo/staging/field-casting-lectern/source.png
+    out: assets/tripo/staging/field-casting-lectern
+  - name: margin-archivist-npc
+    input: assets/tripo/staging/margin-archivist-npc/source.png
+    out: assets/tripo/staging/margin-archivist-npc
+    params:
+      texture: true
+      pbr: true
+      texture_quality: detailed
+      texture_alignment: original_image
+      auto_size: true
+  - name: wordlock-shrine
+    input: assets/tripo/staging/wordlock-shrine/source.png
+    out: assets/tripo/staging/wordlock-shrine
+  - name: scriptorium-waymark-dock
+    input: assets/tripo/staging/scriptorium-waymark-dock/source.png
+    out: assets/tripo/staging/scriptorium-waymark-dock
+  - name: rune-grimoire-keyboard
+    input: assets/tripo/staging/rune-grimoire-keyboard/source.png
+    out: assets/tripo/staging/rune-grimoire-keyboard
+  - name: rune-monolith
+    input: assets/tripo/staging/rune-monolith/source.png
+    out: assets/tripo/staging/rune-monolith
+  - name: world-space-prompt-anchor
+    input: assets/tripo/staging/world-space-prompt-anchor/source.png
+    out: assets/tripo/staging/world-space-prompt-anchor
+  - name: route-bridge
+    input: assets/tripo/staging/route-bridge/source.png
+    out: assets/tripo/staging/route-bridge
+  - name: redaction-hound
+    input: assets/tripo/staging/redaction-hound/source.png
+    out: assets/tripo/staging/redaction-hound
+  - name: homophone-harpy
+    input: assets/tripo/staging/homophone-harpy/source.png
+    out: assets/tripo/staging/homophone-harpy
+  - name: syntax-wyrm
+    input: assets/tripo/staging/syntax-wyrm/source.png
+    out: assets/tripo/staging/syntax-wyrm

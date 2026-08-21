@@ -1,0 +1,38 @@
+{
+  "asset_id": "scriptorium-waymark-dock",
+  "package_id": "spellcheck-2d-asset-package-v1-1",
+  "package_file": "06_exploration/02_scriptorium_waymark_dock.png",
+  "strategy": "tripo_shell_then_rebuild",
+  "wave": "queued",
+  "role": "regional hub anchor, save point, and travel return point",
+  "priority": 5,
+  "scale_m": [
+    7.0,
+    1.2,
+    7.0
+  ],
+  "triangle_target": "3k-8k",
+  "texture_target": "1K",
+  "rig_after_approval": "beacon_lens_and_docking_brackets_optional",
+  "notes": "Normalize the platform and steps for walkability. Match the four docking brackets to authored Scriptorium foot transforms rather than trusting generated alignment.",
+  "runtime_format": "GLB",
+  "runtime_destination": "public/assets/models/scriptorium-waymark-dock.glb",
+  "model": "tripo-v3.1",
+  "params": {
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "standard",
+    "texture_alignment": "original_image",
+    "auto_size": true
+  },
+  "then": null,
+  "for": null,
+  "blocked_until_visual_approval": [
+    "rig",
+    "retopology",
+    "decimate",
+    "animation",
+    "runtime_promotion"
+  ],
+  "command_after_login": "tripo make assets/tripo/staging/scriptorium-waymark-dock/source.png --model tripo-v3.1 --name scriptorium-waymark-dock -o assets/tripo/staging/scriptorium-waymark-dock -p texture=true -p pbr=true -p texture_quality=standard -p texture_alignment=original_image -p auto_size=true --json --yes"
+}

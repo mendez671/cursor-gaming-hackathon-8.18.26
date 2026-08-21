@@ -1,0 +1,34 @@
+{
+  "asset_id": "redaction-hound",
+  "package_id": "spellcheck-2d-asset-package-v1-1",
+  "package_file": "02_enemies/04_redaction_hound.png",
+  "strategy": "tripo_direct_candidate",
+  "wave": "queued",
+  "role": "fast pressure and phrase-obscuring threat",
+  "priority": 12,
+  "scale_m": 1.35,
+  "triangle_target": "3k-8k",
+  "texture_target": "1K",
+  "rig_after_approval": "quadruped",
+  "notes": "Keep censor bands as solid armor or runtime ribbons. Loose torn edges may require simplification before rigging.",
+  "runtime_format": "GLB",
+  "runtime_destination": "public/assets/models/redaction-hound.glb",
+  "model": "tripo-v3.1",
+  "params": {
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "standard",
+    "texture_alignment": "original_image",
+    "auto_size": true
+  },
+  "then": null,
+  "for": null,
+  "blocked_until_visual_approval": [
+    "rig",
+    "retopology",
+    "decimate",
+    "animation",
+    "runtime_promotion"
+  ],
+  "command_after_login": "tripo make assets/tripo/staging/redaction-hound/source.png --model tripo-v3.1 --name redaction-hound -o assets/tripo/staging/redaction-hound -p texture=true -p pbr=true -p texture_quality=standard -p texture_alignment=original_image -p auto_size=true --json --yes"
+}

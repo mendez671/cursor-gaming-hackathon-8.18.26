@@ -1,0 +1,38 @@
+{
+  "asset_id": "ice-crystal-ridge",
+  "package_id": "spellcheck-2d-asset-package-v1-1",
+  "package_file": "04_spell_reactions/06_ice_crystal_ridge.png",
+  "strategy": "tripo_direct_candidate",
+  "wave": "queued",
+  "role": "persistent ice world memory and obstacle",
+  "priority": 8,
+  "scale_m": [
+    5.0,
+    2.3,
+    1.1
+  ],
+  "triangle_target": "2k-6k",
+  "texture_target": "1K",
+  "rig_after_approval": "procedural_scale_in_and_dissolve",
+  "notes": "Use one coherent ridge and a primitive collider. Growth and melt are runtime behavior, not separate meshes.",
+  "runtime_format": "GLB",
+  "runtime_destination": "public/assets/models/ice-crystal-ridge.glb",
+  "model": "tripo-v3.1",
+  "params": {
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "standard",
+    "texture_alignment": "original_image",
+    "auto_size": true
+  },
+  "then": null,
+  "for": null,
+  "blocked_until_visual_approval": [
+    "rig",
+    "retopology",
+    "decimate",
+    "animation",
+    "runtime_promotion"
+  ],
+  "command_after_login": "tripo make assets/tripo/staging/ice-crystal-ridge/source.png --model tripo-v3.1 --name ice-crystal-ridge -o assets/tripo/staging/ice-crystal-ridge -p texture=true -p pbr=true -p texture_quality=standard -p texture_alignment=original_image -p auto_size=true --json --yes"
+}

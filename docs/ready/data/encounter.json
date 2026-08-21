@@ -1,0 +1,78 @@
+{
+  "version": "v0",
+  "winThreats": 6,
+  "loseHits": 3,
+  "resolveHoldMs": 480,
+  "ttiStartSeconds": 8.0,
+  "ttiStepSeconds": 0.5,
+  "ttiMinSeconds": 5.0,
+  "offRoleKnockbackSeconds": 1.5,
+  "panicAddsHit": true,
+  "emptyImpactAddsHit": true,
+  "clockPausesInResolving": true,
+  "authoredNearMiss": "ignis ventis",
+  "authoredMisfireId": "disappointed_goose",
+  "opening": {
+    "threatId": "emberling",
+    "forcedSpellId": "ignis_ventus",
+    "reasonCode": "FLESH_COUNTER",
+    "reasonLabel": "BEST VS. FLESH"
+  },
+  "demoBeat": [
+    "Start in READY with emberling and ignis ventus already shown.",
+    "Type ignis ventus exactly; auto-cast once; threat struck.",
+    "After RESOLVING hold, next wave is plated_sentinel; ignis_ventus is on cooldown; prompt becomes glacies fractura with BEST VS. ARMOR.",
+    "Force-cast ignis ventis with Enter; goose misfire; bard goose line; threat survives; knockback 2.5s.",
+    "Continue until 6 defeats or 3 hits. AFTERMATH or GAME_OVER. R or Enter restarts."
+  ],
+  "threats": [
+    {
+      "id": "emberling",
+      "displayName": "Ember wisp",
+      "tags": ["fleshy", "fire"],
+      "wave": 1,
+      "ttiSeconds": 8.0,
+      "expectedSpellId": "ignis_ventus"
+    },
+    {
+      "id": "plated_sentinel",
+      "displayName": "Plated sentinel",
+      "tags": ["armored"],
+      "wave": 2,
+      "ttiSeconds": 7.5,
+      "expectedSpellId": "glacies_fractura"
+    },
+    {
+      "id": "moth_cloud",
+      "displayName": "Moth cloud",
+      "tags": ["swarm"],
+      "wave": 3,
+      "ttiSeconds": 7.0,
+      "expectedSpellId": "lumen_aqua"
+    },
+    {
+      "id": "glass_hound",
+      "displayName": "Glass hound",
+      "tags": ["charging", "approaching"],
+      "wave": 4,
+      "ttiSeconds": 6.5,
+      "expectedSpellId": "fulgur_ventus"
+    },
+    {
+      "id": "cinder_wight",
+      "displayName": "Cinder wight",
+      "tags": ["fire"],
+      "wave": 5,
+      "ttiSeconds": 6.0,
+      "expectedSpellId": "aqua_glacies"
+    },
+    {
+      "id": "quiet_regent",
+      "displayName": "Quiet regent",
+      "tags": ["elite"],
+      "wave": 6,
+      "ttiSeconds": 5.5,
+      "expectedSpellId": "umbra_mors"
+    }
+  ]
+}

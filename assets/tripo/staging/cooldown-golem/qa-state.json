@@ -1,0 +1,29 @@
+{
+  "qa_state": "awaiting_visual_approval",
+  "visual_approval_status": "not_started",
+  "visual_approval_required": true,
+  "task_id": "097b3159-2b7d-40cb-a9ef-7e9a6f385ad8",
+  "credits_consumed": 30,
+  "cost": 30,
+  "preview": "preview.png",
+  "raw_glb": "raw.glb",
+  "promoted_to_runtime": false,
+  "blocked_operations": [
+    "rig",
+    "retopology",
+    "decimate",
+    "animation",
+    "runtime_promotion"
+  ],
+  "intake": {
+    "front": "pending",
+    "rear": "pending",
+    "sides": "pending",
+    "top": "pending",
+    "underside": "pending",
+    "geometry": "pending",
+    "materials": "pending",
+    "scale_pivot": "pending",
+    "gameplay_camera": "pending"
+  }
+}

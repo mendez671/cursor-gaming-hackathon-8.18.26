@@ -1,0 +1,87 @@
+{
+  "version": "v0",
+  "voiceIntent": "deep-resonant-formal-narrator",
+  "unlock": "first-keypress",
+  "duckDb": -6,
+  "binariesShipped": true,
+  "bundledProvider": "elevenlabs",
+  "bundledVoiceId": "nPczCjzI2devNBz1zQrb",
+  "bundledVoiceName": "Brian - Deep, Resonant and Comforting",
+  "bundledModel": "eleven_multilingual_v2",
+  "identityFloor": "text+subtitle",
+  "sourceLinePack": "docs/ready/data/bard-lines.json",
+  "clips": [
+    {
+      "lineId": "open_01",
+      "subtitle": "At last, our champion. The kingdom has chosen optimism.",
+      "voiceScript": "At last, our champion. [pause] The kingdom has chosen optimism.",
+      "suggestedFile": "public/audio/bard/open_01.mp3",
+      "priority": 50,
+      "requiredForDemo": true
+    },
+    {
+      "lineId": "success_01",
+      "subtitle": "A proper spell. I may yet keep my contract.",
+      "voiceScript": "A proper spell. I may yet keep my contract.",
+      "suggestedFile": "public/audio/bard/success_01.mp3",
+      "priority": 20,
+      "requiredForDemo": false
+    },
+    {
+      "lineId": "typo_first_01",
+      "subtitle": "The spell was ancient. Your spelling was experimental.",
+      "voiceScript": "The spell was ancient. [pause] Your spelling was… experimental.",
+      "suggestedFile": "public/audio/bard/typo_first_01.mp3",
+      "priority": 80,
+      "requiredForDemo": false
+    },
+    {
+      "lineId": "typo_repeat_01",
+      "subtitle": "Again? At this point, it may be tradition.",
+      "voiceScript": "[sigh] Again? [pause] At this point, it may be tradition.",
+      "suggestedFile": "public/audio/bard/typo_repeat_01.mp3",
+      "priority": 85,
+      "requiredForDemo": false
+    },
+    {
+      "lineId": "goose_01",
+      "subtitle": "You requested wind. The universe heard goose.",
+      "voiceScript": "You requested wind. [pause] The universe heard goose.",
+      "suggestedFile": "public/audio/bard/goose_01.mp3",
+      "priority": 90,
+      "requiredForDemo": true
+    },
+    {
+      "lineId": "panic_01",
+      "subtitle": "Half a spell. All of the consequences.",
+      "voiceScript": "Half a spell. All of the consequences.",
+      "suggestedFile": "public/audio/bard/panic_01.mp3",
+      "priority": 75,
+      "requiredForDemo": false
+    },
+    {
+      "lineId": "recover_01",
+      "subtitle": "Competence has arrived. Fashionably late, but welcome.",
+      "voiceScript": "Competence has arrived. Fashionably late, but welcome.",
+      "suggestedFile": "public/audio/bard/recover_01.mp3",
+      "priority": 65,
+      "requiredForDemo": true
+    },
+    {
+      "lineId": "win_01",
+      "subtitle": "You have prevailed. I shall revise my earlier notes.",
+      "voiceScript": "You have prevailed. [pause] I shall revise my earlier notes.",
+      "suggestedFile": "public/audio/bard/win_01.mp3",
+      "priority": 100,
+      "requiredForDemo": true
+    },
+    {
+      "lineId": "lose_01",
+      "subtitle": "Here fell our hero: brave, bold, and one vowel short.",
+      "voiceScript": "Here fell our hero: brave, bold, and one vowel short.",
+      "suggestedFile": "public/audio/bard/lose_01.mp3",
+      "priority": 100,
+      "requiredForDemo": true
+    }
+  ]
+}

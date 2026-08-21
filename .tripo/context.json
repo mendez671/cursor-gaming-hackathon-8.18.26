@@ -1,0 +1,14 @@
+{
+  "output_dir": "assets/tripo/staging",
+  "runtime_format": "glb",
+  "runtime_destination": "public/assets/models",
+  "first_pass": "image-to-3d textured PBR GLB only",
+  "blocked_until_visual_approval": [
+    "rig",
+    "retopology",
+    "decimate",
+    "animation",
+    "runtime_promotion"
+  ],
+  "last_task_id": "6b4b8dcd-9dc2-4af8-b237-b641ba3b6aba"
+}
