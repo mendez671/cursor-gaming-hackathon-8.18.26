@@ -21,7 +21,7 @@ The battle chooses the spell, but the player must type it under pressure. Correc
 
 ## How it was built
 
-Built by Brenden Mendez in three days at a Cursor hackathon (August 2026).
+Built by Brenden Mendez in under two hours at a Cursor hackathon (August 2026), and playable by the end of it.
 
 The work started with specs in [docs/ready/](docs/ready/): product, state architecture, contracts, and a decision ledger. Agents implemented against acceptance tests. Brenden set scope, reviewed the work, and made the decisions.
 
